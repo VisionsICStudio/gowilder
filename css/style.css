@@ -2,6 +2,12 @@
 
 /**  Basic Page CSS **/
 
+.fluid {
+  max-width: 100%;
+  padding: 0 15px 0 15px;
+  margin: 0 auto 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
@@ -25,11 +31,52 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+  height: 54px;
+}
+
+p {
+ font-size: .9em;
+ text-align: left;
+}
+
 a {
   font-weight: bolder !important;
 }
 
 a:hover {
+  color: #FFC300;
+}
+
+article {
+  width: 100%;
+}
+
+about-head {
+  position: relative;
+}
+
+h2 {
+  position: relative;
+  display: block;
+  margin: 20px 0 20px 0;
+  width: 100%;
+}
+
+hr {
+  position: relative;
+  background: #FFC300;
+  height: 6px;
+  width: 100%;
+}
+
+figcaption {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  text-align: left;
   color: #FFC300;
 }
 
@@ -39,9 +86,14 @@ a:hover {
   background-image: url("../svg/gowilder-logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0 0 0 50px;
+  padding: 2px;
   height: 50px;
   width: 200px;
+}
+
+.navbar-expand-lg {
+  position: relative;
+  width: 100%;
 }
 
 .nav-inline {
@@ -53,7 +105,8 @@ a:hover {
 }
 
 .nav-inline .navbar-nav {
-  padding: 0 50px 0 0;
+  width: 100%;
+  justify-content: right;
 }
 
 .nav-inline .navbar-nav .nav-item .nav-link {
@@ -88,14 +141,15 @@ a:hover {
   box-shadow: none;
   border: none;
   margin: 0 auto;
-  max-width: 100vw;
-  background: transparent;
+  max-width: 100%;
+  background: #FFC300;
   padding: 0;
 }
 
 .nav-inline .navbar-nav .dropdown-menu.show {
   display: flex;
   width: 100%;
+  z-index: 9999;
 }
 
 .nav-inline .navbar-nav .dropdown-menu .drop-wrapper {
@@ -144,6 +198,11 @@ section {
 section .main {
   width: 100%;
   height: 80vh;
+}
+
+#about-img {
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -200,15 +259,15 @@ footer {
 
 .carousel-fade .carousel-item {
   opacity: 0;
-  transition: opacity ease-out 2s;
-	transition-duration: 4s;
+  transition: opacity ease-out 1.5s;
+	transition-duration: 5s;
 	transition-property: opacity;
 }
 
 .carousel-fade .carousel-item.active,
 .carousel-fade .carousel-item-next.carousel-item-left,
 .carousel-fade .carousel-item-prev.carousel-item-right {
-  transition: opacity ease-in 2s;
+  transition: opacity ease-in 1.5s;
 	opacity: 1;
 }
 
