@@ -28,7 +28,7 @@
       <!-- Navbar HTML Section --------------------------------------------------------------------------------->
       <nav class="navbar navbar-expand-lg nav-inline navbar-light bg-light">
 
-        <a class="navbar-brand text-hide" href="#">GoWilder Brand Logo</a>
+        <a class="navbar-brand text-hide pl-5 pr-5" href="#">GoWilder Brand Logo</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -319,10 +319,120 @@
   
             </div><!-- bottom row -->
   
-          </div><!-- content container -->
-    
+          </div><!-- content container -->      
+        
         </article><!-- About area end --------------------------------------------------------------------------------------------------------------- -->
     
+        <article id="activities-area"><!-- Activities area begin --------------------------------------------------------------------------------- -->
+
+          <div class="container">
+
+            <div class="row"><!-- top row -->
+    
+              <h2 class="text-white text-uppercase text-left mt-5">Activities</h2>
+    
+              <hr>
+    
+              <div class="row">
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-camping.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Camping</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    This activity is common place at most of our locations. Although, there are variables as to what is
+                    offered in particular. For instance, the majority of our hosted locations offer primitive camp sites.
+                  </p>
+    
+                </article>
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-hiking.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Hiking</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    Most of our hosted sites or locations have hiking trails onsite. With these amazing paths to blaze 
+                    that make their way winding through breath-taking views of pristine landscape.
+                  </p>
+    
+                </article>
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-climbing.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Climbing</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    This activity is for those outdoor enthusiasts that have a skilled background in climbing. Not all our sponsored
+                    locations feature climbing capabilities. Of those of our sites that do feature rock climbing. 
+                  </p>
+    
+                </article>
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-fishing.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Fishing</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    All GoWilder sponsored locations feature fishing as an activity on the outdoor recreational menu. Our locations are of 
+                    some of the most picturesque spots in the world. Come hook some Bass, Trout, Catfish, or Sonny.
+                  </p>
+    
+                  </article> 
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-rafting.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Rafting</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    In select locations of a GoWilder sponsored travel destination, we offer world class white water rafting. Every traveler
+                    must be aware that this type of rafting can be a very challenging experience. 
+                  </p>
+    
+                </article>
+    
+                <article class="activities col-lg-2 mt-2">
+    
+                  <img class="icon mt-4" src="svg/icons/activities-hunting.svg" alt="Icon">
+    
+                  <h3 class="mt-4 text-white text-left">Hunting</h3>
+
+                  <hr>
+    
+                  <p class="text-white mt-4">
+                    At select sights in the arsenal of GoWilder excursions, trips, or vacation stays, we offer hunting as one of the many top
+                    shelf activities that GoWilder has in store for you when you choose a premium package. 
+                  </p>
+    
+                </article>
+    
+              </div><!-- inner row -->
+
+            </div><!-- outer row -->
+        
+          </div><!-- content container -->     
+
+        </article><!-- Activities area end ---------------------------------------------------------------------------------------------------------- -->
+
         <article id="packages-area"><!-- Packages area begin ------------------------------------------------------------------------------------- -->
     
           <div class="container">
@@ -418,120 +528,170 @@
   
               <div class="row w-100 mt-2">
   
-                <h2 class="col-12 text-uppercase text-white text-left">Registration Form</h2>
+                <h2 class="register-title col-12 text-uppercase text-white text-left">Registration Form</h2>
   
                 <hr>
   
                 <div class="row w-100 mt-2">
   
-                  <div class="col-lg-4">
+                  <div class="register-bank col-lg-4">
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="firstname" id="firstname">First Name:</label>
+                      <label class="register-label text-white" for="firstname" id="firstname">First Name:</label>
   
-                      <input type="text" class="form-control" id="firstname" placeholder="Enter First Name...">
-  
+                      <input type="text" class="form-control" id="firstname" placeholder="Enter First Name..."  aria-describedby="firstname-help">
+                      
+                      <small id="firstname-help" class="form-text text-muted">
+                        First name must have at least two (2) characters.
+                      </small>
+
                     </div>
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="lastname" id="lastname">Last Name:</label>
+                      <label class="register-label text-white" for="lastname" id="lastname">Last Name:</label>
   
-                      <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name...">
-  
+                      <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name..." aria-describedby="lastname-help">
+                      
+                      <small id="lastname-help" class="form-text text-muted">
+                        Last name must have at least two (2) characters.
+                      </small>
+
                     </div>
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="address" id="address">Address:</label>
+                      <label class="register-label text-white" for="address" id="address">Address:</label>
   
-                      <input type="text" class="form-control" id="address" placeholder="Enter Address...">
+                      <input type="text" class="form-control" id="address" placeholder="Enter Address..." aria-describedby="address-help">
   
+                      <small id="address-help" class="form-text text-muted">
+                        A address must be entered.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
-                      <label class="text-white text-left" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
+                      <label class="register-label text-white" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
   
-                      <input type="text" class="form-control" id="alternative" placeholder="Enter Apt | Unit | Suite | PO Box...">
+                      <input type="text" class="form-control" id="alternative" placeholder="Enter Apt | Unit | Suite | PO Box..." value="N/A" aria-describedby="alternative-help">
   
+                      <small id="alternative-help" class="form-text text-muted">
+                        Enter an additional address if applicable.
+                      </small>
+
+                    
                     </div>
   
                   </div> <!-- register bank -->
   
-                  <div class="col-lg-4">
+                  <div class="register-bank col-lg-4">
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="city" id="city">City:</label>
+                      <label class="register-label text-white" for="city" id="city">City:</label>
   
-                      <input type="text" class="form-control" id="city" placeholder="Enter City...">
+                      <input type="text" class="form-control" id="city" placeholder="Enter City..." aria-describedby="city-help">
   
+                      <small id="city-help" class="form-text text-muted">
+                        A city must be entered.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="state" id="state">State:</label>
+                      <label class="register-label text-white" for="state" id="state">State:</label>
   
-                      <input type="text" class="form-control" id="state" placeholder="Enter State...">
+                      <input type="text" class="form-control" id="state" placeholder="Enter State..." aria-describedby="state-help">
   
+                      <small id="state-help" class="form-text text-muted">
+                        A state must be entered.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="zip" id="zip">Zip Code:</label>
+                      <label class="register-label text-white" for="zip" id="zip">Zip Code:</label>
   
-                      <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code...">
+                      <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code..." aria-describedby="zip-help">
   
+                      <small id="zip-help" class="form-text text-muted">
+                       Enter only five (5) digit numbers.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
-                      <label class="register-label text-white text-left" for="email" id="email">Email:</label>
+                      <label class="register-label text-white" for="email" id="email">Email:</label>
   
-                      <input type="email" class="form-control" id="email" placeholder="Enter Email...">
+                      <input type="email" class="form-control" id="email" placeholder="Enter Email..." aria-describedby="email-help">
   
+                      <small id="email-help" class="form-text text-muted">
+                        A legitimate email address has to be entered.
+                      </small>
+                    
                     </div>
-  
   
                   </div> <!-- register bank -->
   
-                  <div class="col-lg-4">
+                  <div class="register-bank col-lg-4">
   
                     <div class="form-group">
   
                       <label class="register-label text-white text-left" for="username" id="username">Username:</label>
   
-                      <input type="text" class="form-control" id="username" placeholder="Enter Username...">
+                      <input type="text" class="form-control" id="username" placeholder="Enter Username..." aria-describedby="username-help">
   
+                      <small id="username-help" class="form-text text-muted">
+                        Enter your unique username.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
                       <label class="register-label text-white text-left" for="password" id="password">Password:</label>
   
-                      <input type="password" class="form-control" id="password" placeholder="Enter Password...">
+                      <input type="password" class="form-control" id="password" placeholder="Enter Password..." aria-describedby="password-help">
   
+                      <small id="password-help" class="form-text text-muted">
+                        Enter a unique password.
+                      </small>
+
+                    
                     </div>
   
                     <div class="form-group">
   
                       <label class="register-label text-white text-left" for="confirm" id="confirm">Confirm Password:</label>
   
-                      <input type="password" class="form-control" id="confirm" placeholder="Enter Confirmed Password...">
+                      <input type="password" class="form-control" id="confirm" placeholder="Enter Confirmed Password..."aria-describedby="confirm-help">
   
+                      <small id="confirm-help" class="form-text text-muted">
+                        Enter the same password as above.
+                      </small>
+
                     </div>
   
-                    <div class="form-check ">
+                    <div class="form-check">
   
                       <div class="row w-100 d-block">
   
-                        <label class="register-label text-white text-left " for="subscribe" id="subscribe">Subscribe to the GoWilder newsletter:</label><br>
+                        <label class="register-label text-white" for="subscribe" id="subscribe">Subscribe to the GoWilder newsletter:</label><br>
   
                         <label class="form-check-label text-white mr-5">
   
-                          <input type="checkbox" class="form-check-input pl-5" name="yes" id="register-yes" value="yes" >
+                          <input type="checkbox" class="form-check-input pl-5" name="yes" id="register-yes" value="yes" aria-describedby="subscribe-help">
   
                           YES
   
@@ -539,11 +699,15 @@
   
                         <label class="form-check-label text-white ml-5">
   
-                          <input type="checkbox" class="form-check-input pl-5" name="no" id="register-no" value="no" >
+                          <input type="checkbox" class="form-check-input pl-5" name="no" id="register-no" value="no" aria-describedby="subscribe-help">
   
                           NO
   
                         </label>
+
+                        <small id="subscribe-help" class="form-text text-muted">
+                          Only one check box can be selected.
+                        </small>
   
                       </div>
   
@@ -551,13 +715,13 @@
   
                   </div><!-- register bank -->
   
-                  <div class="row w-100 mt-4">
+                  <div class="row register-buttons w-100 mt-4">
   
                     <div class="button-group col-lg-12">
   
-                      <button type="reset" class="reset btn btn-primary col-lg-2 w-50 text-dark text-bold" id="cancel">CANCEL</button>
+                      <button type="reset" class="reset btn btn-primary col-lg-2 w-50 text-dark" id="cancel">CANCEL</button>
 
-                      <button type="submit" class="submit btn btn-success col-lg-2 w-50 text-dark text-bold" id="cancel">SUBMIT</button>
+                      <button type="submit" class="submit btn btn-success col-lg-2 w-50 text-dark" id="cancel">SUBMIT</button>
   
                     </div>
   
@@ -573,38 +737,277 @@
   
 
         </article>
+
+        <article id="contact-area"><!-- Contact area begin --------------------------------------------------------------------------------------- -->
+
+          <div class="container">
+  
+            <form action="" class="contact-form">
+
+              <div class="row w-100 mt-2">
+  
+                <h2 id="contact-title col-12 text-uppercase text-white text-left">Contact Form</h2>
+    
+                <hr>
+
+                <div class="row w-100 mt-2">
+    
+                  <div class="contact-bank col-lg-4">
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="firstname" id="firstname">First Name:</label>
+    
+                      <input type="text" class="form-control" id="firstname" placeholder="Enter First Name..." aria-describedby="firstname-help">
+    
+                      <small id="firstname-help" class="form-text text-muted">
+                        First name must be at least two (2) characters.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="lastname" id="lastname">Last Name:</label>
+    
+                      <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name..." aria-describedby="lastname-help">
+    
+                      <small id="lastname-help" class="form-text text-muted">
+                        Last name must be at least (2) two characters.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-check">
+    
+                      <div class="row w-100 d-block">
+    
+                        <label class="contact-label text-white" for="gender" id="gender">Please select your birth gender:</label><br>
+    
+                        <label class="form-check-label text-white mr-5">
+    
+                          <input type="checkbox" class="form-check-input pl-5" name="male" id="contact-male" value="male" aria-describedby="gender-help">
+    
+                          MALE
+    
+                        </label>
+    
+                        <label class="form-check-label text-white ml-5">
+    
+                          <input type="checkbox" class="form-check-input pl-5" name="female" id="contact-female" value="female" aria-describedby="gender-help">
+    
+                          FEMALE
+    
+                        </label>
+    
+                        <small id="gender-help" class="form-text text-muted">
+                          Only one check box can be selected.
+                        </small>
+    
+                      </div>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label" for="email" id="email">Email:</label>
+    
+                      <input type="email" class="form-control" id="email" placeholder="Enter Email..." aria-describedby="email-help">
+    
+                      <small id="email-help" class="form-text text-muted">
+                        Enter a valid email address.
+                      </small>
+    
+                    </div>
+    
+                  </div> <!-- contact bank -->
+    
+                  <div class="contact-bank col-lg-4">
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="address" id="address">Address:</label>
+    
+                      <input type="text" class="form-control" id="address" placeholder="Enter Address..." aria-describedby="address-help">
+    
+                      <small id="address-help" class="form-text text-muted">
+                        A address must be entered.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
+    
+                      <input type="text" class="form-control" id="alternative" placeholder="Enter alternative address..." value="N/A" aria-describedby="alternative-help">
+    
+                      <small id="alternative-help" class="form-text text-muted">
+                        Enter an additional address if applicable.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="city" id="city">City:</label>
+    
+                      <input type="text" class="form-control" id="city" placeholder="Enter City..." aria-describedby="city-help">
+    
+                      <small id="city-help" class="form-text text-muted">
+                        A city must be entered.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="state" id="state">State:</label>
+    
+                      <input type="text" class="form-control" id="state" placeholder="Enter State..." aria-describedby="state-help">
+    
+                      <small id="state-help" class="form-text text-muted">
+                        A state must be entered.
+                      </small>
+    
+                    </div>
+    
+                  </div> <!-- contact bank -->
+    
+                  <div class="contact-bank col-lg-4">
+    
+                    <div class="form-group">
+    
+                      <label class="contact-label text-white" for="zip" id="zip">Zip Code:</label>
+    
+                      <input type="text" class="form-control" id="zip" placeholder="Enter Zip Code..." aria-describedby="zip-help">
+    
+                      <small id="zip-help" class="form-text text-muted">
+                        Only (5) digit numbers accepted.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label for="phone" class="contact-label text-white" id="phone">Phone Number:</label>
+    
+                      <input type="text" class="form-control" id="phone" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="phone-help">
+    
+                      <small id="phone-help" class="form-text text-muted">
+                        Enter only a valid phone number.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-group">
+    
+                      <label for="alternative" class="contact-label text-white" id="alternative">Alternate Phone Number:</label>
+    
+                      <input type="text" class="form-control" id="alternative" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="alternative-help">
+    
+                      <small id="alternative-help" class="form-text text-muted">
+                        Enter only a valid phone number.
+                      </small>
+    
+                    </div>
+    
+                    <div class="form-check">
+    
+                      <div class="row w-100 d-block">
+    
+                        <label class="contact-label text-white" for="availability" id="availability">When is the best time to reach you?</label><br>
+    
+                        <label class="form-check-label text-white mr-5">
+    
+                          <input type="checkbox" class="form-check-input" name="morning" id="contact-morning" value="morning" aria-describedby="availability-help">
+    
+                          MORNING
+    
+                        </label>
+    
+                        <label class="form-check-label text-white ml-5">
+    
+                          <input type="checkbox" class="form-check-input pl-5" name="afternoon" id="contact-afternoon" value="afternoon" aria-describedby="availability-help">
+    
+                          AFTERNOON
+    
+                        </label>
+    
+                        <label class="form-check-label text-white mr-5">
+    
+                          <input type="checkbox" class="form-check-input pl-5" name="evening" id="contact-evening" value="evening" aria-describedby="availability-help">
+    
+                          EVENING
+    
+                        </label>
+    
+                        <small id="availability-help" class="form-text text-muted">
+                          Only one check box can be selected.
+                        </small>
+    
+                      </div>
+    
+                    </div>
+    
+                  </div><!-- contact bank -->
+    
+                  <div class="row contact-buttons w-100 mt-4">
+    
+                    <div class="button-group col-lg-12">
+    
+                      <button type="reset" class="reset btn btn-primary col-lg-2 w-50 text-dark" id="cancel">CANCEL</button>
+                      <button type="submit" class="submit btn btn-success col-lg-2 w-50 text-dark" id="cancel">SUBMIT</button>
+    
+                    </div>
+    
+                  </div><!-- contact button bank -->
+    
+                </div><!-- inner row -->
+
+              </div><!-- outer row -->
+
+            </form><!-- form -->
+            
+          </div><!-- container -->
+  
+        </article><!-- Contact area end ------------------------------------------------------------------------------------------------------------- -->
     
       </div>
 
     </section>
 
-    <footer><!-- Footer area begin ------------------------------------------------------------------------------------------------------------------ -->
+    <footer class="container-fluid text-white">
 
-      <div class="container-fluid">
+      <div class="row col-12 align-items-center">
 
-        <div class="d-inline-flex align-items-center justify-content-around">
+        <div class="col-4"></div>
 
-          <div class=""></div>
+        <div class="col-4">
 
-          <div class="justify-content-center text-white">&copy 2020 GoWilder, LLC</div>
+            <div class="justify-content-center text-white">&copy 2020 GoWilder, LLC</div>
 
-          <div class="text-white">
+        </div>
 
-            <div class="align-items-center foot-links">
+        <div class="col-4">
 
-              <a href="#contact-area" class="text-white">Contact</a>
+          <nav class="navbar navbar-expand-lg nav-inline text-white">
 
-              <a href="#sitemap-area" class="text-white">Sitemap</a>
+            <ul class="navbar-nav main-menu">
 
-            </div>
+              <li class="nav-item"><a class="nav-link" href="#contact-area"><strong>Contact</strong></a></li>
 
-          </div>
+              <li class="nav-item"><a class="nav-link" href="#sitemap-area"><strong>Sitemap</strong></a></li>
+
+            </ul>
+
+          </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
 
         </div>
 
       </div>
 
-    </footer><!-- Footer area end ------------------------------------------------------------------------------------------------------------------- -->
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
