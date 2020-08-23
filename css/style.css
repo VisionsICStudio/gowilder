@@ -416,6 +416,10 @@ and (max-width: 768px) {
 .package img {
   width: 350px;
   height: 190px;
+  @media (max-width: 600px) and (min-width: 400px)  {
+    width: 350px;
+    height: 190px;
+  }
 }
 
 .card-body {
