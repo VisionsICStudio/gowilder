@@ -435,7 +435,96 @@ section .main {
 
 /**  Page -- top locations **/
 
+#locations {
+  padding: 0;
+}
 
+#locations h2 {
+  display: none;
+}
+
+#locations blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#locations blockquote .location-heading {
+  background-color: rgba(255,255,255,.4);
+  padding: 5%;
+  position: absolute;
+  bottom: 0px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  font-weight: 400;
+  border-radius: 20px 20px 0 0;
+}
+
+#locations blockquote .location-heading:hover {
+  background-color: hsla(0,0%,5%,0.35);
+  color: hsla(0,0%,100%,1.00);
+}
+
+#locations #yellowstone {
+  background: url(../webp/locations-yellowstone.webp) no-repeat center center;
+  background-size: cover;
+}
+
+#locations #canyon {
+  background: url(../webp/locations-canyon.webp) no-repeat center center;
+  background-size: cover;
+}
+
+#locations #yosemite {
+  background: url(../webp/locations-yosemite.webp) no-repeat center center;
+  background-size: cover;
+}
+
+#locations #rushmore {
+  background: url(../webp/locations-rushmore.webp) no-repeat center center;
+  background-size: cover;
+}
+
+#locations .location-heading {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#locations .location-heading .more, #locations .location {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#locations .location-heading:hover .more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#locations .location-heading:hover .location {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#locations .location-heading .intro::after {
+  content: '...';
+}
+
+#locations .quote:hover .intro::after {
+  content: '';
+}
 
 /**  Footer **/
 
