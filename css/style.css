@@ -217,42 +217,6 @@ section .main {
   height: 100%;
 }
 
-footer {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  height: 75px;
-  width: 100vw;
-  background: #000000 !important;
-}
-
-.d-inline-flex {
-  position: relative;
-  height: 75px;
-  width: 100%;
-}
-
-.foot-links {
-  position: absolute;
-  bottom: 25px;
-}
-
-.foot-links > a {
-  padding-right: 40px;
-  text-decoration: none;
-  color: #ffffff !important;
-}
-
-.foot-links > a:hover {
-  text-decoration: none;
-  color: #FFC300;
-}
-
-.foot-nav {
-  align-items: baseline !important;
-  height: 50px !important;
-}
-
 /** Carousel Fade **/
 
 #carousel .carousel-item.horizon {
@@ -423,138 +387,93 @@ footer {
 
 .card-body {
   background-color: #000000;
+  color: #ffffff;
 }
 
 .card-body a {
   color: #000000 !important;
 }
 
-/**  Page -- top locations **
-#top-locations {
-  padding: 0;
+.modal-backdrop { 
+  background-color: #000000; 
 }
 
-#top-locations h2 {
-  display: none;
+.modal dialog {
+  background: #000000 !important;
 }
 
-#top-locations blockquote {
-  margin: 0;
-  padding: 0;
-  border-left: none;
-  min-height: 500px;
-  position: relative;
+.modal-content, .modal-header, .modal-title, .modal-body {
+  border-color:black; 
+  background-color: black;
 }
 
-#top-locations blockquote .info {
-  background-color: rgba(255,255,255,.4);
-  padding: 5%;
-  position: absolute;
-  bottom: 0px;
-  left: 5%;
-  right: 5%;
-  width: 90%;
-  font-weight: 400;
-  border-radius: 20px 20px 0 0;
+.modal-title {
+  color: #385723;
 }
 
-#top-locations blockquote .info:hover {
-  background-color: hsla(0,0%,5%,0.35);
-  color: hsla(0,0%,100%,1.00);
+.modal body {
+  color: #ffffff;
 }
 
-#top-locations #lambo {
-  background: url(../images/supercar5.jpg) no-repeat center center;
-  background-size: cover;
+.modal-body .card .card-body {
+  border-color: #000000;
 }
 
-#top-locations #mclaren {
-  background: url(../images/supercar2.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#top-locations #henney {
-  background: url(../images/supercar4.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#top-locations #mercedes {
-  background: url(../images/supercar3.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-#top-locations .info {
-  font-size: 1.2em;
-  line-height: 110%;
-  font-weight: 400;
-}
-
-#top-locations .info .more, #top-locations .location {
-  opacity: 0;
-  font-size: 0;
-  line-height: 0;
-  padding-top: 10px;
-}
-
-#top-locations .quote:hover .more {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  display: block;
-  opacity: 1;
+.premium-point, .advanced-point, .standard-point {
+  color: #FFC300;
   font-size: .8em;
-  line-height: 120%;
 }
 
-#top-locations .info:hover .location {
-  display: block;
-  font-size: .7em;
-  text-align: right;
+.price {
+  font-size: .8em;
 }
 
-#top-locations .info .intro::after {
-  content: '...';
+.price span {
+  color: #385723;
+  font-size: 3em;
 }
 
-#top-locations .info:hover .intro::after {
-  content: '';
-}
+/**  Page -- top locations **/
 
-/**  Footer **
+
+
+/**  Footer **/
+
 footer {
-  background: #000000;
-  color: white;
-  font-size: .8em;
-  padding: 20px 0 40px 0;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  height: 75px;
+  width: 100vw;
+  background: #000000 !important;
 }
 
-footer a {
-  color: hsla(359,81%,48%,1.00);
+.d-inline-flex {
+  position: relative;
+  height: 75px;
+  width: 100%;
 }
 
-footer a:hover {
-  color: hsla(359,45%,82%,1.00) !important;
+.foot-links {
+  position: absolute;
 }
 
-footer .phone {
-  font-size: 1.4em;
-  font-weight: 700;
-  color: hsla(359,81%,48%,1.00);
+footer > ul li a {
+  color: #ffffff !important;
 }
 
-footer .navbar {
-  margin-bottom: 0;
-  min-height: 0;
+.foot-links > a {
+  padding-right: 40px;
+  text-decoration: none;
+  color: #ffffff !important;
 }
 
-footer .navbar-default {
-  background-color: transparent;
-  border: none;
-  margin-right: 40px;
+.foot-links > a:hover {
+  text-decoration: none;
+  color: #FFC300;
 }
 
-footer .navbar-nav>li a {
-  padding-top: 0;
-  padding-bottom: 0;
-  text-decoration: underline;
-  color: hsla(359,81%,48%,1.00) !important;
+.foot-nav {
+  align-items: baseline !important;
+  height: 50px !important;
 }
