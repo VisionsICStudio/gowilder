@@ -1,9 +1,9 @@
 /*
 ============================================
-; Title: nav.js | week 8 (update)
+; Title:  nav.js | week 3 (update)
 ; Author: Aaron Wilson
 ; Instructor: Kevin Imhoff
-; Date: 17 August 2020
+; Date: August 23 2020
 ; Description: JQuery Code GoWilder Website
 ;===========================================
 */
@@ -14,6 +14,7 @@ $(document).ready(function() {
 
   // Hide all other sections.
   $('.main #home-area').show().siblings().hide()
+  
   $('.main-menu ul li a').on('click', function(e) {
 
     var thisLink = $(this).attr('href')

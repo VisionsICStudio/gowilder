@@ -1,86 +1,73 @@
-$(function() {
+function getOutput() {
+          
+  var outputs = {
 
-  "use strict";
+    firstname: $('#register-form > #firstname').val(),
+    lastname: $('#register-form > #lastname').val(),
+    address: $('#register-form > #address').val(),
+    alternative: $('#register-form > #firstnae').val(),
+    city: $('#register-form > #alternative').val(),
+    state: $('#register-form > #state').val(),
+    zip: $('#register-form > #zip').val(),
+    email: $('#register-form > #email').val(),
+    username: $('#register-form > #username').val(),
+    password: $('#register-form > #password').val(),
+    confirm: $('#register-form > #confirm').val(),
+    newsletter: $('#register-form > #yes').val() + $('#register-form > #no').val()
+  }
 
-  var topoffset = 50; //variable for menu height
-  var slideqty = $('#featured .item').length;
-  var wheight = $(window).height(); //get the height of the window
-  var randSlide = Math.floor(Math.random()*slideqty);
+  $('#register-form a').on('click', function(e) {
+  
+    $('#register-area-output').show().siblings().hide()
+  
+    $('#register-area-output').html(`
+  
+      <div class="row">
+  
+        <div class="row">
+  
+          <ul class="list-group col">
+  
+            <li class="list-group-item text-white"><span>First Name: <script>${outputs.firstname}</span></li>
+  
+            <li class="list-group-item text-white"><span>Last Name: <script>${outputs.lastname}</span></li>
+  
+            <li class="list-group-item text-white"><span>Address: <script>${outputs.address}</span></li>
+  
+            <li class="list-group-item text-white"><span>Extended Address: ${outputs.alternate}</span></li>
+  
+          </ul>
+          
+          <ul class="list-group col">
+  
+            <li class="list-group-item text-white"><span>City: ${outputs.city}</span></li>
+  
+            <li class="list-group-item text-white">State: ${outputs.state}</li>
+  
+            <li class="list-group-item text-white">Zip Code: ${outputs.zip}</li>
+  
+            <li class="list-group-item text-white">Email: ${outputs.email}</li>
+  
+          </ul>
+  
+          <ul class="list-group col">
+  
+            <li class="list-group-item text-white">Username: ${outputs.username}</li>
+  
+            <li class="list-group-item text-white">Password: ${outputs.password}</li>
+  
+            <li class="list-group-item text-white">Confirm Password: ${outputs.confirm}</li>
+            
+            <li class="list-group-item text-white">Subscribe To GoWilder Newsletter? ${outputs.newsletter}</li>
+  
+          </ul>
+        
+        </div><!-- inner row -->
+  
+      </div><!-- outer row -->
+  
+    `) 
 
-  $('#featured .item').eq(randSlide).addClass('active');
+  })
 
-// Set to window tallness. 
-$('.fullheight').css('height', wheight);  
-
-// Replace IMG inside carousels with a background image.
-$('#featured .item img').each(function() {
-  var imgSrc = $(this).attr('src');
-  $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  $(this).remove();
-});
-
-// Adjust height of .fullheight elements on window resize.
-$(window).resize(function() {
-  // Get the height of the window.
-  wheight = $(window).height();
-   // Set to window tallness.
-  $('.fullheight').css('height', wheight);  
-});
-
-// Activate Scrollspy.
-$('body').scrollspy({
-  target: 'header .navbar',
-  offset: topoffset
-});
-
-// Add bodynav class.
-var hash = $(this).find('li.active a').attr('href');
-
-if(hash !== '#featured') {
-  $('header nav').addClass('bodynav');
-} else {
-  $('header nav').removeClass('bodynav');
 }
-
-
-// Add an bodynav class to nav when scrollspy event fires.
-$('.navbar-fixed-top').on('activate.bs.scrollspy', function() {
-  var hash = $(this).find('li.active a').attr('href');
-
-  if(hash !== '#featured') {
-    $('header nav').addClass('bodynav');
-  } else {
-    $('header nav').removeClass('bodynav');
-  }
-});
-
-// Use smooth scrolling when clicking on navigation.
-$('.navbar a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') === 
-    this.pathname.replace(/^\//,'') && 
-    location.hostname === this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top-topoffset+2
-      }, 500);
-      return false;
-    } // target.length.
-  } // Click function.
-}); // Smooth scrolling.
-
-  // Automatically generate carousel indicators.
-  for (var i=0; i < slideqty; i++) {
-    var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
-    if (i === randSlide) {
-      insertText += ' class="active" ';
-    }
-    insertText += '></li>';
-    $('#featured ol').append(insertText);
-  }
-
-  $('.carousel').carousel({
-    pause: false
-  });
-});

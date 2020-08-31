@@ -1,0 +1,189 @@
+.fluid {
+  width: 100%;
+  height: 100%;
+  padding: 0 13px 0 15px;
+  margin: 0 auto 0 auto;
+}
+
+body {
+  height: 100%;
+}
+
+header, footer {
+  height: 50px;
+}
+
+main {
+ height: 100%;
+}
+
+.col {
+  height: 100%;
+}
+
+.image-body-yellowstone {
+  background-image: url("../webp/locations-yellowstone.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+  }
+
+.image-body-canyon {
+  background-image: url("../webp/locations-canyon.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+
+.image-body-yosemite {
+  background-image: url("../webp/locations-yosemite.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+
+.image-body-rushmore {
+  background-image: url("../webp/locations-rushmore.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+  
+
+.call {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 30rem;
+  height: 30rem;
+  background-color: #fff;
+  box-shadow: 0px 1px 16px 0 rgba(0, 0, 0, 0.18);
+}
+
+.call-body {
+  padding: 2px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+
+.call-title {
+  margin-top: 1rem;
+}
+
+.button-base {
+ margin-top:12rem;
+}
+
+.call-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #385723;
+  color: #fff;
+  height: 30rem;
+  visibility: visible;
+  opacity: 1;
+  animation-name: fadeFromtop;
+  -webkit-animation-name: fadeFromtop;
+  animation-duration: 800ms;
+  -webkit-animation-duration: 800ms;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.call-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ /* Styles */ 
+.button-base p button {
+  background-color: #FFC300;
+  color: #000000;
+  border-radius: 40px;
+  border: none;
+  padding: 3px 8px;
+}
+
+.call-title h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #FFC300;
+  text-align: center;
+}
+
+.call-description p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.call-description a {
+  background-color: #e02f87;
+  color: #fff;
+  padding: 3px 12px;
+  text-decoration: none;
+}
+
+/* ======================
+***** HOVER EFFECT ******
+=======================*/
+
+.call:hover .call-description {
+  visibility: visible;
+  opacity: 1;
+  /*   animation: o-upfade-top 0.7s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;  */
+  animation-name: fadeFromBottom;
+  -webkit-animation-name: fadeFromBottom;
+  animation-duration: 800ms;
+  -webkit-animation-duration: 800ms;
+  animation-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadeFromBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    display: block;
+  }
+}
+
+@keyframes fadeFromtop {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(400%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+}

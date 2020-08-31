@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100,700,900');
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/**  Header Navigation **/
+
+.navbar-brand {
+  background-image: url("../svg/gowilder-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 50px;
+  padding: 2px;
+}
+
+/** Carousel Fade **/
+
+#carousel .carousel-item.horizon,
+#carousel .carousel-item.lights,
+#carousel .carousel-item.rocks,
+#carousel .carousel-item.gaze,
+#carousel .carousel-item.stars {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 85vh;
+}
+
+#carousel .carousel-item.horizon {
+  background-image: url("../webp/carousel-image-01.webp");
+}
+
+#carousel .carousel-item.lights {
+  background-image: url("../webp/carousel-image-02.webp");
+}
+
+#carousel .carousel-item.rocks {
+  background-image: url("../webp/carousel-image-03.webp");
+}
+
+#carousel .carousel-item.gaze {
+  background-image: url("..//webp/carousel-image-04.webp");
+}
+
+#carousel .carousel-item.stars {
+  background-image: url("../webp/carousel-image-05.webp");
+}
+
+#carousel .carousel-item .caption {
+  background: transparent;
+  color: white;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#carousel .caption h2 {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: #FFC300;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+#carousel .caption p {
+  animation-duration: 1s;
+  animation-delay: 2.2s;
+}
+
+#carousel .caption a {
+  animation-duration: 1s;
+  animation-delay: 2.4s;
+}
+
+/* Button */
+.cta-btn {
+  display: inline-block;
+  min-width: 160px;
+  height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 600;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  text-transform: capitalize;
+  background-color: #385723;
+}
+
+.cta-btn.active, .cta-btn:hover, .cta-btn:focus {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  background-color: #92d050;
+  border-color: #92D050;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+/** Locations **/
+
+.image-body-yellowstone {
+  background-image: url("../webp/locations-yellowstone.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+  }
+
+.image-body-canyon {
+  background-image: url("../webp/locations-canyon.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+
+.image-body-yosemite {
+  background-image: url("../webp/locations-yosemite.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+
+.image-body-rushmore {
+  background-image: url("../webp/locations-rushmore.webp");
+  background-repeat: no-repeat;  
+  background-size: auto;
+}
+  
+ .activities h3 {
+  color: #FFC300;
+}
+
+label {
+  font-family: "Raleway", sans-serif;
+}
+
+small {
+  color: #FFC300;
+}
+
+.card-body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.card-body a {
+  color: #000000 !important;
+}
+
+.modal-backdrop { 
+  background-color: #000000; 
+}
+
+.modal dialog {
+  background: #000000 !important;
+}
+
+.modal-content, .modal-header, .modal-title, .modal-body {
+  border-color:black; 
+  background-color: black;
+}
+
+.modal-title {
+  color: #385723;
+}
+
+.modal body {
+  color: #ffffff;
+}
+
+.modal-body .card .card-body {
+  border-color: #000000;
+}
+
+.premium-point, .advanced-point, .standard-point {
+  color: #FFC300;
+  font-size: .8em;
+}
+
+.price {
+  font-size: .8em;
+}
+
+.price span {
+  color: #385723;
+  font-size: 3em;
+}
+
+#locations h2 {
+  display: none;
+}
+
+#locations blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#locations blockquote .location-heading {
+  background-color: rgba(255,255,255,.4);
+  padding: 5%;
+  position: absolute;
+  bottom: 0px;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  font-weight: 400;
+  border-radius: 20px 20px 0 0;
+}
+
+#locations blockquote .location-heading:hover {
+  background-color: hsla(0,0%,5%,0.35);
+  color: hsla(0,0%,100%,1.00);
+}
+
+#locations #yellowstone {
+  background: url("../webp/locations-yellowstone.webp") no-repeat center center;
+  background-size: auto cover;
+}
+
+#locations #canyon {
+  background: url("../webp/locations-canyon.webp") no-repeat center center;
+  background-size: auto cover;
+}
+
+#locations #yosemite {
+  background: url("../webp/locations-yosemite.webp") no-repeat center center;
+  background-size:  auto cover;
+}
+
+#locations #rushmore {
+  background: url("../webp/locations-rushmore.webp") no-repeat center center;
+  background-size: auto cover;
+}
+
+#locations .location-heading {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#locations .location-heading .more, #locations .location {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#locations .location-heading:hover .more {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#locations .location-heading:hover .location {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#locations .location-heading .intro::after {
+  content: '...';
+}
+
+#locations .quote:hover .intro::after {
+  content: '';
+}
+
+/** Footer **/
+
+footer {
+  background: #000000;
+}
+
+.bottom nav ul li a {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}
+
+.bottom nav ul li a:hover {
+  color: #FFC300;
+  font-family: "Raleway", sans-serif;
+}

@@ -1,0 +1,478 @@
+<!-- /*
+============================================
+; Title: contact.html | week 3 (update)
+; Author: Aaron Wilson
+; Instructor: Kevin Imhoff
+; Date: August 23 2020
+; Description: HTML Markup GoWilder Website
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="GoWilder website for outdoor sporting enthusiasts">
+
+    <title>GoWilder | Exciting Outdoor Adventures</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    
+  </head>
+
+  <body style="background-color: #000000;">
+
+    <header class="container-fluid bg-white"><!-- Header area begin ------------------------------------------------------------------------------------------------------------------ -->
+
+      <!-- Navbar HTML Section --------------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg nav-inline navbar-light bg-light top-nav">
+
+        <a class="navbar-brand text-hide pl-5 pr-5" href="#">GoWilder Brand Logo</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto main-menu">
+
+            <li class="nav-item active">
+
+              <a class="nav-link" href="index.html"><strong>Home</strong><span class="sr-only">(current)</span></a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong class="font-weight-bolder">About</strong></a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <div class="drop-wrapper">
+
+                  <div class="drop-bank">
+
+                    <a class="dropdown-item" href="about.html"><strong>About GoWilder</strong></a>
+
+                    <a class="dropdown-item" href="activities.html"><strong>Activities</strong></a>
+
+                    <a class="dropdown-item" href="locations.html"><strong>Top Locations</strong></a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#packages-area"><strong>Packages</strong></a></li>
+
+            <li class="nav-item"><a class="nav-link" href="#register-area"><strong>Register</strong></a></li>
+
+          </ul>
+
+        </div>
+
+      </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+    
+    </header><!-- Header area end ------------------------------------------------------------------------------------------------------------------- -->
+
+    <section>
+
+      <div class="d-block main" style="background-color: #385723;">
+
+        <article id="contact-area"><!-- Contact area begin --------------------------------------------------------------------------------------- -->
+
+          <div class="container">
+  
+            <form action="" class="contact-form">
+
+              <div class="row">
+
+                <div class="col-12">
+  
+                  <h2 id="contact-title" class="text-uppercase text-white text-left mt-5">Contact Form</h2>
+      
+                  <hr class="contact-headline">
+
+                </div>
+
+              </div>
+
+              <div class="row mt-2">
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="firstname" id="firstname">First Name:</label>
+  
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name..." aria-describedby="firstname-help" required>
+  
+                    <small id="firstname-help" class="form-text text-warning">
+                      First name must be at least two (2) characters.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="lastname" id="lastname">Last Name:</label>
+  
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name..." aria-describedby="lastname-help" required>
+  
+                    <small id="lastname-help" class="form-text text-warning">
+                      Last name must be at least (2) two characters.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-check">
+  
+                    <div class="row">
+  
+                      <label class="contact-label text-white" for="gender" id="gender">Please select your birth gender:</label>
+
+                    </div>
+
+                    <div class="row justify-content-between">
+
+                      <div class="col">
+
+                      <label class="form-check-label text-white">
+  
+                        <input type="checkbox" class="form-check-input" name="male" id="contact-male" value="male" aria-describedby="gender-help">
+  
+                        MALE
+  
+                      </label>
+
+                      </div>
+
+                      <div class="col">
+
+                      <label class="form-check-label text-white">
+  
+                        <input type="checkbox" class="form-check-input" name="female" id="contact-female" value="female" aria-describedby="gender-help">
+  
+                        FEMALE
+  
+                      </label>
+
+                      </div>
+
+                    </div>
+  
+                    <div class="row">
+  
+                      <small id="gender-help" class="form-text text-warning">
+                        Only one check box can be selected.
+                      </small>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="email" id="email">Email:</label>
+  
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email..." aria-describedby="email-help" required>
+  
+                    <small id="email-help" class="form-text text-warning">
+                      Enter a valid email address.
+                    </small>
+  
+                  </div>
+  
+                </div> <!-- contact bank -->
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="address" id="address">Address:</label>
+  
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address..." aria-describedby="address-help" required>
+  
+                    <small id="address-help" class="form-text text-warning">
+                      A address must be entered.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
+  
+                    <input type="text" class="form-control" id="alternative" name="alternative" placeholder="Enter alternative address..." value="N/A" aria-describedby="alternative-help" required>
+  
+                    <small id="alternative-help" class="form-text text-warning">
+                      Enter an additional address if applicable.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="city" id="city">City:</label>
+  
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City..." aria-describedby="city-help" required>
+  
+                    <small id="city-help" class="form-text text-warning">
+                      A city must be entered.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="state" id="state">State:</label>
+  
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Enter State..." aria-describedby="state-help" required>
+  
+                    <small id="state-help" class="form-text text-warning">
+                      A state must be entered.
+                    </small>
+  
+                  </div>
+  
+                </div> <!-- contact bank -->
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="zip" id="zip">Zip Code:</label>
+  
+                    <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter Zip Code..." aria-describedby="zip-help" required>
+  
+                    <small id="zip-help" class="form-text text-warning">
+                      Only (5) digit numbers accepted.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label for="phone" class="contact-label text-white" id="phone">Phone Number:</label>
+  
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="phone-help" required>
+  
+                    <small id="phone-help" class="form-text text-warning">
+                      Enter only a valid phone number.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label for="alternative" class="contact-label text-white" id="alternative">Alternate Phone Number:</label>
+  
+                    <input type="text" class="form-control" id="alternative" name="alternative" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="alternative-help" required>
+  
+                    <small id="alternative-help" class="form-text text-warning">
+                      Enter only a valid phone number.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-check">
+  
+                    <div class="row">
+
+                      <label class="d-block contact-label text-white" for="availability" id="availability">When is the best time to reach you?</label>
+
+                    </div>
+
+                    <div class="row justify-content-between">
+
+                      <div class="col">
+
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="morning" id="contact-morning" value="morning" aria-describedby="availability-help">
+    
+                          AM
+    
+                        </label>
+
+                      </div>
+
+                      <div class="col">
+  
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="afternoon" id="contact-afternoon" value="afternoon" aria-describedby="availability-help">
+    
+                          NOON
+    
+                        </label>
+
+                      </div>
+
+                      <div class="col">
+  
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="evening" id="contact-evening" value="evening" aria-describedby="availability-help">
+    
+                          PM
+    
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <small id="availability-help" class="form-text text-warning">
+                        Only one check box can be selected.
+                      </small>
+
+                    </div>
+
+                  </div>
+  
+                </div><!-- contact bank -->
+  
+              </div><!-- inner row -->
+
+              <div class="row contact-buttons mt-4">
+
+                <div class="button-group col-lg-12 text-center pd-5 mb-5">
+
+                  <button type="reset" class="reset btn btn-primary col-lg-2 text-white" id="cancel">CANCEL</button>
+
+                  <button type="submit" class="submit btn btn-success col-lg-2 text-white" id="submit">SUBMIT</button>
+
+                </div>
+
+              </div><!-- contact button bank -->
+
+            </form><!-- form -->
+            
+          </div><!-- container -->
+  
+        </article><!-- Contact area end ------------------------------------------------------------------------------------------------------------- -->
+
+        <article id="contact-output-area"><!-- Contact output area begin ------------------------------------------------------------------------- -->
+
+          <div class="row">
+    
+            <ul class="list-group">
+    
+              <li class="list-group-item"><span>First Name: </span></li>
+    
+              <li class="list-group-item"><span>Last Name: </span></li>
+    
+              <li class="list-group-item"><span>Birth Gender: </span></li>
+    
+              <li class="list-group-item"><span>Email: </span></li>
+    
+            </ul>
+            
+            <ul class="list-group">
+    
+              <li class="list-group-item"><span>Address: </span></li>
+    
+              <li class="list-group-item">Extended Address: N/A</li>
+    
+              <li class="list-group-item">City: </li>
+    
+              <li class="list-group-item">State: </li>
+    
+            </ul>
+    
+            <ul class="list-group">
+    
+              <li class="list-group-item">Zip Code: </li>
+    
+              <li class="list-group-item">Phone Number: </li>
+    
+              <li class="list-group-item">Alternate Phone Number: </li>
+              
+              <li class="list-group-item">Best Time To Call? </li>
+    
+            </ul>
+          
+          </div><!-- row -->
+    
+        </article><!-- Contact output area end ------------------------------------------------------------------------------------------------------ -->
+
+      </div>
+
+    </section>
+
+    <footer class="container-fluid">
+
+      <div class="row col-12 align-items-center">
+
+        <div class="col-4"></div>
+
+        <dov class="col-4">
+
+          <div class="row">
+
+            <div class="col-12 ml-auto mr-auto">
+
+                <div class="text-center text-white">&copy 2020 GoWilder, LLC</div>
+
+            </div>
+
+          </div>
+
+        </dov>
+
+        <div class="col-4">
+
+          <nav class="navbar navbar-expand-lg nav-inline bottom-nav">
+
+            <ul class="navbar-nav ml-auto main-menu">
+
+              <li class="nav-item"><a class="nav-link" href="contact.html"><strong>Contact</strong></a></li>
+
+              <li class="nav-item"><a class="nav-link" href="sitemap.html"><strong>Sitemap</strong></a></li>
+
+            </ul>
+
+          </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="js/scripts-no.js"></script>
+    <script src="js/nav.js"></script>
+
+  </body>
+
+</html>

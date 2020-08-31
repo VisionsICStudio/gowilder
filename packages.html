@@ -1,0 +1,487 @@
+<!-- /*
+============================================
+; Title:  index.html | week 3 (update)
+; Author: Aaron Wilson
+; Instructor: Kevin Imhoff
+; Date: August 23 2020
+; Description: HTML Markup GoWilder Website
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="GoWilder website for outdoor sporting enthusiasts">
+
+    <title>GoWilder | Exciting Outdoor Adventures</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    
+  </head>
+
+  <body style="background-color: #000000;">
+
+    <header class="container-fluid bg-white"><!-- Header area begin ------------------------------------------------------------------------------------------------------------------ -->
+
+      <!-- Navbar HTML Section --------------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg nav-inline navbar-light bg-light top-nav">
+
+        <a class="navbar-brand text-hide pl-5 pr-5" href="#">GoWilder Brand Logo</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto main-menu">
+
+            <li class="nav-item active">
+
+              <a class="nav-link" href="index.html"><strong>Home</strong><span class="sr-only">(current)</span></a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong class="font-weight-bolder">About</strong></a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <div class="drop-wrapper">
+
+                  <div class="drop-bank">
+
+                    <a class="dropdown-item" href="about.html"><strong>About GoWilder</strong></a>
+
+                    <a class="dropdown-item" href="activities.html"><strong>Activities</strong></a>
+
+                    <a class="dropdown-item" href="locations.html"><strong>Top Locations</strong></a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="packages.html"><strong>Packages</strong></a></li>
+
+            <li class="nav-item"><a class="nav-link" href="register.html"><strong>Register</strong></a></li>
+
+          </ul>
+
+        </div>
+
+      </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+    
+    </header><!-- Header area end ------------------------------------------------------------------------------------------------------------------- -->
+
+    <section>
+
+      <div class="d-block main" style="background-color: #385723;">
+
+        <article id="packages-area"><!-- Packages area begin ------------------------------------------------------------------------------------- -->
+    
+          <div class="container">
+  
+            <div class="row">
+
+              <div class="col-12">
+
+                <h2 class="text-white text-uppercase text-left mt-5">Packages</h2>
+  
+                <hr>
+
+              </div>
+              
+            </div><!-- top row -->
+  
+            <div class="row mt-3">
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-premium.svg" alt="This is the GoWilder Premium Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Premium Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                      Our premium package is the mother of all our packages of which is boasting full of awesome amenities no matter which
+                    destination you choice, you will receive a unforgettable top notch experience. 
+                  </p>
+
+                  <div class="row justify-content-center">
+  
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#premium-modal">
+                      Learn More
+                    </a>
+
+                </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-advanced.svg" alt="This is the GoWilder Enhanced Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Advanced Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                      GoWilder's Advanced package will have several upgraded amenities. Although it is not as rich as the premium package, but
+                    it includes the essential important upgrades you may need for your.
+                  </p>
+  
+                  <div class="row justify-content-center">
+
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#advanced-modal">
+                      Learn More
+                    </a>
+
+                  </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-standard.svg" alt="This is the GoWilder Standard Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Standard Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                    A GoWilder standard package is looked at as the economical option of the GoWilder package choices. With this package, 
+                    travelers will be treated to a memorable stay.
+                  </p>
+
+                  <div class="row justify-content-center">
+  
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#standard-modal">
+                      Learn More
+                    </a>
+
+                  </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+            </div><!-- outer row -->
+                          
+          </div><!-- container -->
+    
+        </article><!-- Packages area end ------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- Premium package modal area begin ------------------------------------------------------------------------------------------------------- -->
+        <div class="modal fade" id="premium-modal" tabindex="-1" aria-labelledby="premium-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="premium-modal-label">GoWilder Premium Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-premium.svg" class="card-img-top img-fluid" alt="Our Premium Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      Our premium package is the mother of all our packages of which is boasting full of awesome amenities no matter which
+                      destination you choice, you will receive a top notch experience. Some examples include:
+
+                      <ul id="premium-list" class="text-left">
+
+                        <li class="premium-point">All major attraction tour tickets included</li>
+
+                        <li class="premium-point">First choice of premium camping locations</li>
+
+                        <li class="premium-point">RV premium lot reservations</li>
+
+                        <li class="premium-point">Power and outside shower at RV location</li>
+
+                      </ul>
+
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="ml-5 text-success">$399.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Premium package modal area end --------------------------------------------------------------------------------------------------- -->
+
+        <!-- Enhanced package modal area begin ------------------------------------------------------------------------------------------------------ -->
+        <div class="modal fade" id="advanced-modal" tabindex="-1" aria-labelledby="enhanced-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="advanced-modal-label">GoWilder Advanced Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-advanced.svg" class="card-img-top img-fluid" alt="Our Advanced Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      GoWilder's advanced package will have several upgraded amenities. Although it is not as rich as the premium package, but
+                      it does include the essential important upgrades like: 
+
+                      <ul id="advanced-list" class="text-left">
+
+                        <li class="advanced-point">Reserved accommodations lot at location</li>
+
+                        <li class="advanced-point">Pre-purchase phone number for all destination tickets</li>
+
+                        <li class="advanced-point">First available amenity upgrade list</li>
+
+                        <li class="advanced-point">Direct contact via phone/text of availability</li>
+
+                      </ul>
+
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="text-success ml-5">$199.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Enhanced package modal area end -------------------------------------------------------------------------------------------------- -->
+
+        <!-- Standard package modal area begin ------------------------------------------------------------------------------------------------------ -->
+        <div class="modal fade" id="standard-modal" tabindex="-1" aria-labelledby="standard-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="standard-modal-label">GoWilder Standard Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-standard.svg" class="card-img-top img-fluid" alt="Our Standard Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      A GoWilder standard package is looked at as the economical option of the GoWilder package choices. With this package, 
+                      travelers will be treated to:
+
+                      <ul id="standard-list" class="text-left">
+
+                        <li class="standard-point">Pre-purchased tickets to the travel destination</li>
+
+                        <li class="standard-point">A prep package delivered to your address</li>
+
+                        <li class="standard-point">Maps and activity brochures in the prep kit</li>
+
+                        <li class="standard-point">First come, first serve amenities hotline</li>
+
+                      </ul>
+                      
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="text-success ml-5">$99.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Standard package modal area end -------------------------------------------------------------------------------------------------- -->
+    
+      </div>
+
+    </section>
+
+    <footer class="container-fluid">
+
+      <div class="row col-12 align-items-center">
+
+        <div class="col-4"></div>
+
+        <dov class="col-4">
+
+          <div class="row">
+
+            <div class="col-12 ml-auto mr-auto">
+
+                <div class="text-center text-white">&copy 2020 GoWilder, LLC</div>
+
+            </div>
+
+          </div>
+
+        </dov>
+
+        <div class="col-4">
+
+          <nav class="navbar navbar-expand-lg nav-inline bottom-nav">
+
+            <ul class="navbar-nav ml-auto main-menu">
+
+              <li class="nav-item"><a class="nav-link" href="contact.html"><strong>Contact</strong></a></li>
+
+              <li class="nav-item"><a class="nav-link" href="sitemap.html"><strong>Sitemap</strong></a></li>
+
+            </ul>
+
+          </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="js/scripts-no.js"></script>
+    <script src="js/nav.js"></script>
+
+  </body>
+
+</html>

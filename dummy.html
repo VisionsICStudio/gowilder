@@ -1,0 +1,1476 @@
+<!-- /*
+============================================
+; Title:  index.html | week 3 (update)
+; Author: Aaron Wilson
+; Instructor: Kevin Imhoff
+; Date: August 23 2020
+; Description: HTML Markup GoWilder Website
+;===========================================
+*/ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="GoWilder website for outdoor sporting enthusiasts">
+
+    <title>GoWilder | Exciting Outdoor Adventures</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/prefixfree.min.js"></script>
+    
+  </head>
+
+  <body style="background-color: #000000;">
+
+    <header class="container-fluid bg-white"><!-- Header area begin ------------------------------------------------------------------------------------------------------------------ -->
+
+      <!-- Navbar HTML Section --------------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg nav-inline navbar-light bg-light top-nav">
+
+        <a class="navbar-brand text-hide pl-5 pr-5" href="#">GoWilder Brand Logo</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto main-menu">
+
+            <li class="nav-item active">
+
+              <a class="nav-link" href="index.html"><strong>Home</strong><span class="sr-only">(current)</span></a>
+
+            </li>
+
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong class="font-weight-bolder">About</strong></a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <div class="drop-wrapper">
+
+                  <div class="drop-bank">
+
+                    <a class="dropdown-item" href="about.html"><strong>About GoWilder</strong></a>
+
+                    <a class="dropdown-item" href="activities.html"><strong>Activities</strong></a>
+
+                    <a class="dropdown-item" href="locations.html"><strong>Top Locations</strong></a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="packages.html"><strong>Packages</strong></a></li>
+
+            <li class="nav-item"><a class="nav-link" href="register.html"><strong>Register</strong></a></li>
+
+          </ul>
+
+        </div>
+
+      </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+    
+    </header><!-- Header area end ------------------------------------------------------------------------------------------------------------------- -->
+
+    <section>
+
+      <div class="d-block main" style="background-color: #385723;">
+
+        <article id="home-area" style="height: 85vh;"><!-- Home area begin --------------------------------------------------------------------------------------------- -->
+
+          <div id="carousel" class="carousel slide carousel-fade hero-slides" data-ride="carousel" style="height: 85vh;">
+
+            <ol class="carousel-indicators">
+
+              <li class="active" data-target="#carousel" data-slide-to="0"></li>
+
+              <li data-target="#carousel" data-slide-to="1"></li>
+
+              <li data-target="#carousel" data-slide-to="2"></li>
+
+              <li data-target="#carousel" data-slide-to="3"></li>
+
+              <li data-target="#carousel" data-slide-to="4"></li>
+
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+
+              <div class="carousel-item active horizon">
+
+                <div class="container d-none d-md-block">
+
+                  <div class="row cta-wrap">
+
+                    <div class="cta col-12 col-md-9 col-lg-7 col-xl-6 mt-xl-5">
+
+                      <div class="caption animated FadeInUp fadeInUp">
+
+                        <h2>Step Up To Broad Horizons</h2>
+
+                        <p>
+                          Want to broaden your horizons? A GoWilder package of your choice might be just what
+                          you seek. Step up to big adventure and book a GoWilder package.
+                        </p>
+
+                        <a class="btn cta-btn justify-content-start" href="#">Learn more</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-item lights">
+
+                <div class="container h-100 d-none d-md-block">
+
+                  <div class="row cta-wrap">
+
+                    <div class="cta col-12 col-md-9 col-lg-7 col-xl-6 mt-xl-5">
+
+                      <div class="caption animated FadeInUp fadeInUp">
+
+                        <h2>Marvel At The Northern Lights</h2>
+
+                        <p>
+                          Alaska is calling your name... Aurora perhaps? Experience the spectacle that 
+                          is the mysterious Northern Lights. GoWilder Premium package maybe? Oh, bring the warmth...
+                        </p>
+
+                        <a class="animated fadeInUp btn cta-btn justify-content-start" href="#">Learn more</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-item rocks">
+
+                <div class="container d-none d-md-block">
+
+                  <div class="row cta-wrap">
+
+                    <div class="cta col-12 col-md-9 col-lg-7 col-xl-6 mt-xl-5">
+
+                      <div class="caption animated FadeInUp fadeInUp">
+
+                        <h2>Climb To Your True Potential</h2>
+
+                        <p>
+                          There is nothing like a good rock climb session through the cliffs of Grand Canyon National Park.
+                          Impossible you say? NOT! Its a GoWilder top location. Just book your package.
+                        </p>
+
+                        <a class="animated fadeInUp btn cta-btn justify-content-start" href="#">Learn more</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-item gaze">
+
+                <div class="container d-none d-md-block">
+
+                  <div class="row cta-wrap">
+
+                    <div class="cta col-12 col-md-9 col-lg-7 col-xl-6 mt-xl-5">
+
+                      <div class="caption animated FadeInUp fadeInUp">
+
+                        <h2>A Breath Of Fresh Air</h2>
+
+                        <p>
+                          We sometimes forget how good it is to take in the breath of nature at your feet as you gaze in to an unforgettable
+                          sunset on a amazing day. GoWilder packages are your answer...
+                        </p>
+
+                        <a class="animated fadeInUp btn cta-btn justify-content-start" href="#">Learn more</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="carousel-item stars">
+
+                <div class="container d-none d-md-block">
+
+                  <div class="row cta-wrap">
+
+                    <div class="cta col-12 col-md-9 col-lg-7 col-xl-6 mt-xl-5">
+
+                      <div class="caption animated FadeInUp fadeInUp">
+
+                        <h2>Wow, Just Monumental!</h2>
+
+                        <p>
+                          If the historical reverence of monuments is what you seek; Just maybe, you could be after the
+                          devine sight that is Mount Rushmore. It's a top package click away...
+                        </p>
+
+                        <a class="animated fadeInUp btn cta-btn justify-content-start" href="#">Learn more</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </article><!-- Home area end ---------------------------------------------------------------------------------------------------------------- -->
+
+        <article id="about-area"><!-- About area begin ------------------------------------------------------------------------------------------- -->
+    
+          <div class="container">
+  
+            <div class="row">
+
+              <div class="col-12">
+
+                <h2 class="text-white text-uppercase text-left mt-5">About GoWilder</h2>
+  
+                <hr class="about-headline">
+
+              </div>
+              
+            </div><!-- top row -->
+
+            <div class="row">
+
+              <figure class="col-12 text-success mt-3">
+
+                <img src="./webp/tree-about.webp" class="img-fluid" id="about-img" alt="man in big tree">
+
+                <figcaption>
+                  This is an image shot from our sponsored location.
+                </figcaption>
+
+              </figure>
+
+              <div class="col-xs-12 col-sm-12 col-m-6 col-lg-6 col-xl-6 text-left text-white mt-3 mb-5">
+
+                <p>
+                  GoWilder is a travel booking company that specializes in arranging both travel and stay accommodations for families, groups, 
+                  or individuals looking to enjoy the outdoor sporting experience. Founded in 1963, GoWilder has been a very reputable travel
+                  firm in practice for over 55 years of travel knowledge ad experience in their repertoire. With that kind of expertise in their
+                  respective field, it goes without saying that GoWilder has clear stronghold on the outdoor travel market.
+                </p>
+  
+              </div>
+              
+              <div class="col-xs-12 col-sm-12 col-m-6 col-lg-6 col-xl-6 text-left text-white mt-3 mb-5">
+
+                 <p>
+                  GoWilder has built upon both their wealth of knowledge and reputation in the outdoor sporting travel industry. But, it is also 
+                  GoWilder's innovative vision towards the future that continues to make GoWilder the premier company of choice to handle any 
+                  travelers total accommodations needs. It is those partnerships with a majority of the park systems through the world, and the
+                  ability of GoWilder to utilize their network of connections to deliver whatever accommodations a traveler, or travel group of any 
+                  variety may need.
+                </p>
+
+              </div>
+  
+            </div><!-- bottom row -->
+  
+          </div><!-- content container -->      
+        
+        </article><!-- About area end --------------------------------------------------------------------------------------------------------------- -->
+    
+        <article id="activities-area"><!-- Activities area begin --------------------------------------------------------------------------------- -->
+
+          <div class="container">
+
+            <div class="row"><!-- top row -->
+    
+              <h2 class="text-white text-uppercase text-left mt-5">Activities</h2>
+    
+              <hr class="activities-headline">
+
+            </div>
+    
+            <div class="row">
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-camping.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Camping</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  This activity is common place at most of our locations. Although, there are variables as to what is
+                  offered in particular. For instance, the majority of our hosted locations offer primitive camp sites.
+                </p>
+  
+              </article>
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-hiking.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Hiking</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  Most of our hosted sites or locations have hiking trails onsite. With these amazing paths to blaze 
+                  that make their way winding through breath-taking views of pristine landscape.
+                </p>
+  
+              </article>
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-climbing.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Climbing</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  This activity is for those outdoor enthusiasts that have a skilled background in climbing. Not all our sponsored
+                  locations feature climbing capabilities. Of those of our sites that do feature rock climbing. 
+                </p>
+  
+              </article>
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-fishing.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Fishing</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  All GoWilder sponsored locations feature fishing as an activity on the outdoor recreational menu. Our locations are of 
+                  some of the most picturesque spots in the world. Come hook some Bass, Trout, Catfish, or Sonny.
+                </p>
+  
+                </article> 
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-rafting.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Rafting</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  In select locations of a GoWilder sponsored travel destination, we offer world class white water rafting. Every traveler
+                  must be aware that this type of rafting can be a very challenging experience. 
+                </p>
+  
+              </article>
+  
+              <article class="activities col-lg-2 mt-2">
+  
+                <img class="icon mt-4" src="svg/icons/activities-hunting.svg" alt="Icon">
+  
+                <h3 class="mt-4 text-left">Hunting</h3>
+
+                <hr class="activities-line">
+  
+                <p class="text-white mt-4">
+                  At select sights in the arsenal of GoWilder excursions, trips, or vacation stays, we offer hunting as one of the many top
+                  shelf activities that GoWilder has in store for you when you choose a premium package. 
+                </p>
+  
+              </article>
+  
+            </div><!-- inner row -->
+        
+          </div><!-- content container -->     
+
+        </article><!-- Activities area end ---------------------------------------------------------------------------------------------------------- -->
+
+
+        <article id="packages-area"><!-- Packages area begin ------------------------------------------------------------------------------------- -->
+    
+          <div class="container">
+  
+            <div class="row">
+
+              <div class="col-12">
+
+                <h2 class="text-white text-uppercase text-left mt-5">Packages</h2>
+  
+                <hr>
+
+              </div>
+              
+            </div><!-- top row -->
+  
+            <div class="row mt-3">
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-premium.svg" alt="This is the GoWilder Premium Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Premium Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                      Our premium package is the mother of all our packages of which is boasting full of awesome amenities no matter which
+                    destination you choice, you will receive a unforgettable top notch experience. 
+                  </p>
+
+                  <div class="row justify-content-center">
+  
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#premium-modal">
+                      Learn More
+                    </a>
+
+                </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-advanced.svg" alt="This is the GoWilder Enhanced Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Advanced Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                      GoWilder's Advanced package will have several upgraded amenities. Although it is not as rich as the premium package, but
+                    it includes the essential important upgrades you may need for your.
+                  </p>
+  
+                  <div class="row justify-content-center">
+
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#advanced-modal">
+                      Learn More
+                    </a>
+
+                  </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+              <div class="package col-sm-12 col-md-12 col-lg-4 col-xl-4" style="width: 350px;">
+  
+                <img class="card-img-top img-fluid" src="svg/icons/package-standard.svg" alt="This is the GoWilder Standard Package">
+  
+                <div class="card-body mt-3 mb-3">
+  
+                  <h3 class="card-title text-success mt-3">Standard Package</h3>
+  
+                  <p class="card-text text-white mt-3">
+                    A GoWilder standard package is looked at as the economical option of the GoWilder package choices. With this package, 
+                    travelers will be treated to a memorable stay.
+                  </p>
+
+                  <div class="row justify-content-center">
+  
+                    <a href="#" class="btn btn-success mt-3 mb-5" data-toggle="modal" data-target="#standard-modal">
+                      Learn More
+                    </a>
+
+                  </div>
+
+                </div><!-- card-body info -->
+  
+              </div> <!-- card package -->
+  
+            </div><!-- outer row -->
+                          
+          </div><!-- container -->
+    
+        </article><!-- Packages area end ------------------------------------------------------------------------------------------------------------ -->
+
+        <!-- Premium package modal area begin ------------------------------------------------------------------------------------------------------- -->
+        <div class="modal fade" id="premium-modal" tabindex="-1" aria-labelledby="premium-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="premium-modal-label">GoWilder Premium Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-premium.svg" class="card-img-top img-fluid" alt="Our Premium Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      Our premium package is the mother of all our packages of which is boasting full of awesome amenities no matter which
+                      destination you choice, you will receive a top notch experience. Some examples include:
+
+                      <ul id="premium-list" class="text-left">
+
+                        <li class="premium-point">All major attraction tour tickets included</li>
+
+                        <li class="premium-point">First choice of premium camping locations</li>
+
+                        <li class="premium-point">RV premium lot reservations</li>
+
+                        <li class="premium-point">Power and outside shower at RV location</li>
+
+                      </ul>
+
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="ml-5 text-success">$399.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Premium package modal area end --------------------------------------------------------------------------------------------------- -->
+
+        <!-- Enhanced package modal area begin ------------------------------------------------------------------------------------------------------ -->
+        <div class="modal fade" id="advanced-modal" tabindex="-1" aria-labelledby="enhanced-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="advanced-modal-label">GoWilder Advanced Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-advanced.svg" class="card-img-top img-fluid" alt="Our Advanced Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      GoWilder's advanced package will have several upgraded amenities. Although it is not as rich as the premium package, but
+                      it does include the essential important upgrades like: 
+
+                      <ul id="advanced-list" class="text-left">
+
+                        <li class="advanced-point">Reserved accommodations lot at location</li>
+
+                        <li class="advanced-point">Pre-purchase phone number for all destination tickets</li>
+
+                        <li class="advanced-point">First available amenity upgrade list</li>
+
+                        <li class="advanced-point">Direct contact via phone/text of availability</li>
+
+                      </ul>
+
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="text-success ml-5">$199.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Enhanced package modal area end -------------------------------------------------------------------------------------------------- -->
+
+        <!-- Standard package modal area begin ------------------------------------------------------------------------------------------------------ -->
+        <div class="modal fade" id="standard-modal" tabindex="-1" aria-labelledby="standard-modal-label" aria-hidden="true">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <div class="modal-header">
+
+                <h5 class="modal-title text-success" id="standard-modal-label">GoWilder Standard Package</h5>
+
+                <button type="button" class="close bg-danger text-white" data-dismiss="modal" aria-label="Close">
+
+                  <span aria-hidden="true">&times;</span>
+
+                </button>
+
+              </div>
+
+              <div class="modal-body">
+
+                <div class="card">
+
+                  <img src="svg/icons/package-standard.svg" class="card-img-top img-fluid" alt="Our Standard Package in Depth">
+
+                  <div class="card-body">
+
+                    <p class="card-text">
+
+                      A GoWilder standard package is looked at as the economical option of the GoWilder package choices. With this package, 
+                      travelers will be treated to:
+
+                      <ul id="standard-list" class="text-left">
+
+                        <li class="standard-point">Pre-purchased tickets to the travel destination</li>
+
+                        <li class="standard-point">A prep package delivered to your address</li>
+
+                        <li class="standard-point">Maps and activity brochures in the prep kit</li>
+
+                        <li class="standard-point">First come, first serve amenities hotline</li>
+
+                      </ul>
+                      
+                    </p>
+
+                    <hr class="package-rule">
+
+                    <p class="price text-center">
+                      Yours for <span class="text-success ml-5">$99.99</span><br><br>
+
+                      * Pricing may be subject to chance with increased seasonal demand.
+                    </p>
+
+                    <hr class="package-rule">
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="modal-footer">
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                <button type="button" class="btn btn-success">Purchase Package</button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div><!-- Standard package modal area end -------------------------------------------------------------------------------------------------- -->
+
+        <article id="register-area"><!-- Register area begin ------------------------------------------------------------------------------------ --> 
+          
+          <div class="container">
+
+            <form action="" class="register-form">
+  
+              <div class="row">
+
+                <div class="col-12">
+  
+                  <h2 class="text-white text-uppercase text-left mt-5">Register Form</h2>
+    
+                  <hr class="register-headline">
+  
+                </div>
+                
+              </div><!-- top row -->
+  
+              <div class="row mt-2">
+
+                <div class="register-bank col-lg-4">
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="firstname" id="firstname">First Name:</label>
+
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name..."  aria-describedby="firstname-help" required>
+                    
+                    <small id="firstname-help" class="form-text text-warning">
+                      First name must have at least two (2) characters.
+                    </small>
+
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="lastname" id="lastname">Last Name:</label>
+
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name..." aria-describedby="lastname-help" required>
+                    
+                    <small id="lastname-help" class="form-text text-warning">
+                      Last name must have at least two (2) characters.
+                    </small>
+
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="address" id="address">Address:</label>
+
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address..." aria-describedby="address-help" required>
+
+                    <small id="address-help" class="form-text text-warning">
+                      A address must be entered.
+                    </small>
+                  
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
+
+                    <input type="text" class="form-control" id="alternative" name="alternative" placeholder="Enter Apt | Unit | Suite | PO Box..." value="N/A" aria-describedby="alternative-help" required>
+
+                    <small id="alternative-help" class="form-text text-warning">
+                      Enter an additional address if applicable.
+                    </small>
+                  
+                  </div>
+
+                </div> <!-- register bank -->
+
+                <div class="register-bank col-lg-4">
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="city" id="city">City:</label>
+
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City..." aria-describedby="city-help" required>
+
+                    <small id="city-help" class="form-text text-warning">
+                      A city must be entered.
+                    </small>
+                  
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="state" id="state">State:</label>
+
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Enter State..." aria-describedby="state-help" required>
+
+                    <small id="state-help" class="form-text text-warning">
+                      A state must be entered.
+                    </small>
+
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="zip" id="zip">Zip Code:</label>
+
+                    <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter Zip Code..." aria-describedby="zip-help" required>
+
+                    <small id="zip-help" class="form-text text-warning">
+                      Enter only five (5) digit numbers.
+                    </small>
+                  
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white" for="email" id="email">Email:</label>
+
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email..." aria-describedby="email-help" required>
+
+                    <small id="email-help" class="form-text text-warning">
+                      A legitimate email address has to be entered.
+                    </small>
+                  
+                  </div>
+
+                </div> <!-- register bank -->
+
+                <div class="register-bank col-lg-4">
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white text-left" for="username" id="username">Username:</label>
+
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username..." aria-describedby="username-help" required>
+
+                    <small id="username-help" class="form-text text-warning">
+                      Enter your unique username.
+                    </small>
+                  
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white text-left" for="password" id="password">Password:</label>
+
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password..." aria-describedby="password-help" required>
+
+                    <small id="password-help" class="form-text text-warning">
+                      Enter a unique password.
+                    </small>
+
+                  </div>
+
+                  <div class="form-group">
+
+                    <label class="register-label text-white text-left" for="confirm" id="confirm">Confirm Password:</label>
+
+                    <input type="password" class="form-control" id="confirm" name="confirm" placeholder="Enter Confirmed Password..."aria-describedby="confirm-help" required>
+
+                    <small id="confirm-help" class="form-text text-warning">
+                      Enter the same password as above.
+                    </small>
+
+                  </div>
+
+                  <div class="form-check">
+
+                    <div class="row d-block">
+
+                      <label class="register-label text-white" for="subscribe" id="subscribe">Subscribe to the GoWilder newsletter:</label><br>
+
+                      <label class="form-check-label text-white mr-5">
+
+                        <input type="checkbox" class="form-check-input ml-5 pl-5" name="yes" id="register-yes" value="yes" aria-describedby="subscribe-help">
+
+                        YES
+
+                      </label>
+
+                      <label class="form-check-label text-white mr-4">
+
+                        <input type="checkbox" class="form-check-input ml-5 pl-5" name="no" id="register-no" value="no" aria-describedby="subscribe-help">
+
+                        NO
+
+                      </label>
+
+                      <small id="subscribe-help" class="form-text text-warning">
+                        Only one check box can be selected.
+                      </small>
+
+                    </div>
+
+                  </div>
+
+                </div><!-- register bank -->
+
+              </div><!-- inner row -->
+
+              <div class="row register-buttons mt-4">
+
+                <div class="button-group col-lg-12 text-center pd-5 mb-5">
+
+                  <button type="reset" class="reset btn btn-primary col-lg-2 text-white" id="cancel">CANCEL</button>
+
+                  <a href="#" class="submit btn btn-success col-lg-2 text-white" role="button" aria-pressed="true" >SUBMIT</a>
+
+                </div>
+
+              </div><!-- register button bank -->
+
+            </form><!-- form -->
+                          
+          </div><!-- container -->
+
+        </article><!-- Register area end ----------------------------------------------------------------------------------------------------- -->
+
+        <article id="register-area-output">
+
+        </article>
+    
+        <article id="contact-area"><!-- Contact area begin --------------------------------------------------------------------------------------- -->
+
+          <div class="container">
+  
+            <form action="" class="contact-form">
+
+              <div class="row">
+
+                <div class="col-12">
+  
+                  <h2 id="contact-title" class="text-uppercase text-white text-left mt-5">Contact Form</h2>
+      
+                  <hr class="contact-headline">
+
+                </div>
+
+              </div>
+
+              <div class="row mt-2">
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="firstname" id="firstname">First Name:</label>
+  
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name..." aria-describedby="firstname-help" required>
+  
+                    <small id="firstname-help" class="form-text text-warning">
+                      First name must be at least two (2) characters.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="lastname" id="lastname">Last Name:</label>
+  
+                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name..." aria-describedby="lastname-help" required>
+  
+                    <small id="lastname-help" class="form-text text-warning">
+                      Last name must be at least (2) two characters.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-check">
+  
+                    <div class="row">
+  
+                      <label class="contact-label text-white" for="gender" id="gender">Please select your birth gender:</label>
+
+                    </div>
+
+                    <div class="row justify-content-between">
+
+                      <div class="col">
+
+                      <label class="form-check-label text-white">
+  
+                        <input type="checkbox" class="form-check-input" name="male" id="contact-male" value="male" aria-describedby="gender-help">
+  
+                        MALE
+  
+                      </label>
+
+                      </div>
+
+                      <div class="col">
+
+                      <label class="form-check-label text-white">
+  
+                        <input type="checkbox" class="form-check-input" name="female" id="contact-female" value="female" aria-describedby="gender-help">
+  
+                        FEMALE
+  
+                      </label>
+
+                      </div>
+
+                    </div>
+  
+                    <div class="row">
+  
+                      <small id="gender-help" class="form-text text-warning">
+                        Only one check box can be selected.
+                      </small>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="email" id="email">Email:</label>
+  
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email..." aria-describedby="email-help" required>
+  
+                    <small id="email-help" class="form-text text-warning">
+                      Enter a valid email address.
+                    </small>
+  
+                  </div>
+  
+                </div> <!-- contact bank -->
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="address" id="address">Address:</label>
+  
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Enter Address..." aria-describedby="address-help" required>
+  
+                    <small id="address-help" class="form-text text-warning">
+                      A address must be entered.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="alternative" id="alternative">Apt | Unit | Suite | PO Box:</label>
+  
+                    <input type="text" class="form-control" id="alternative" name="alternative" placeholder="Enter alternative address..." value="N/A" aria-describedby="alternative-help" required>
+  
+                    <small id="alternative-help" class="form-text text-warning">
+                      Enter an additional address if applicable.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="city" id="city">City:</label>
+  
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Enter City..." aria-describedby="city-help" required>
+  
+                    <small id="city-help" class="form-text text-warning">
+                      A city must be entered.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="state" id="state">State:</label>
+  
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Enter State..." aria-describedby="state-help" required>
+  
+                    <small id="state-help" class="form-text text-warning">
+                      A state must be entered.
+                    </small>
+  
+                  </div>
+  
+                </div> <!-- contact bank -->
+  
+                <div class="contact-bank col-lg-4">
+  
+                  <div class="form-group">
+  
+                    <label class="contact-label text-white" for="zip" id="zip">Zip Code:</label>
+  
+                    <input type="text" class="form-control" id="zip" name="zip" placeholder="Enter Zip Code..." aria-describedby="zip-help" required>
+  
+                    <small id="zip-help" class="form-text text-warning">
+                      Only (5) digit numbers accepted.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label for="phone" class="contact-label text-white" id="phone">Phone Number:</label>
+  
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="phone-help" required>
+  
+                    <small id="phone-help" class="form-text text-warning">
+                      Enter only a valid phone number.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-group">
+  
+                    <label for="alternative" class="contact-label text-white" id="alternative">Alternate Phone Number:</label>
+  
+                    <input type="text" class="form-control" id="alternative" name="alternative" placeholder="Enter Ex. (111)-111-1111..." aria-describedby="alternative-help" required>
+  
+                    <small id="alternative-help" class="form-text text-warning">
+                      Enter only a valid phone number.
+                    </small>
+  
+                  </div>
+  
+                  <div class="form-check">
+  
+                    <div class="row">
+
+                      <label class="d-block contact-label text-white" for="availability" id="availability">When is the best time to reach you?</label>
+
+                    </div>
+
+                    <div class="row justify-content-between">
+
+                      <div class="col">
+
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="morning" id="contact-morning" value="morning" aria-describedby="availability-help">
+    
+                          AM
+    
+                        </label>
+
+                      </div>
+
+                      <div class="col">
+  
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="afternoon" id="contact-afternoon" value="afternoon" aria-describedby="availability-help">
+    
+                          NOON
+    
+                        </label>
+
+                      </div>
+
+                      <div class="col">
+  
+                        <label class="form-check-label text-white">
+    
+                          <input type="checkbox" class="form-check-input" name="evening" id="contact-evening" value="evening" aria-describedby="availability-help">
+    
+                          PM
+    
+                        </label>
+
+                      </div>
+
+                    </div>
+
+                    <div class="row">
+
+                      <small id="availability-help" class="form-text text-warning">
+                        Only one check box can be selected.
+                      </small>
+
+                    </div>
+
+                  </div>
+  
+                </div><!-- contact bank -->
+  
+              </div><!-- inner row -->
+
+              <div class="row contact-buttons mt-4">
+
+                <div class="button-group col-lg-12 text-center pd-5 mb-5">
+
+                  <button type="reset" class="reset btn btn-primary col-lg-2 text-white" id="cancel">CANCEL</button>
+
+                  <button type="submit" class="submit btn btn-success col-lg-2 text-white" id="submit">SUBMIT</button>
+
+                </div>
+
+              </div><!-- contact button bank -->
+
+            </form><!-- form -->
+            
+          </div><!-- container -->
+  
+        </article><!-- Contact area end ------------------------------------------------------------------------------------------------------------- -->
+
+        <article id="contact-output-area"><!-- Contact output area begin ------------------------------------------------------------------------- -->
+
+          <div class="row">
+    
+            <ul class="list-group">
+    
+              <li class="list-group-item"><span>First Name: </span></li>
+    
+              <li class="list-group-item"><span>Last Name: </span></li>
+    
+              <li class="list-group-item"><span>Birth Gender: </span></li>
+    
+              <li class="list-group-item"><span>Email: </span></li>
+    
+            </ul>
+            
+            <ul class="list-group">
+    
+              <li class="list-group-item"><span>Address: </span></li>
+    
+              <li class="list-group-item">Extended Address: N/A</li>
+    
+              <li class="list-group-item">City: </li>
+    
+              <li class="list-group-item">State: </li>
+    
+            </ul>
+    
+            <ul class="list-group">
+    
+              <li class="list-group-item">Zip Code: </li>
+    
+              <li class="list-group-item">Phone Number: </li>
+    
+              <li class="list-group-item">Alternate Phone Number: </li>
+              
+              <li class="list-group-item">Best Time To Call? </li>
+    
+            </ul>
+          
+          </div><!-- row -->
+    
+        </article><!-- Contact output area end ------------------------------------------------------------------------------------------------------ -->
+    
+        <article id="sitemap-area"><!-- Sitemap area begin --------------------------------------------------------------------------------------- -->
+    
+          <div class="page" id="sitemap">
+    
+            <div class="container-fluid">
+    
+              <h2 id="contact-title">GoWilder Sitemap</h2>
+    
+              <hr class="rule">
+    
+              <div class="main-menu row">
+    
+                <ul class="sitemap" id="sitemap">
+    
+                  <li class="main-pages">
+                    
+                    <a href="#home-area">HOME</a>
+    
+                  </li>
+    
+                  <li class="main-pages">
+                    
+                    <a href="#about-area">ABOUT</a>
+    
+                    <ul class="sub-map" id="sub-map">
+    
+                      <li class="sub-pages">
+                        
+                        <a href="#activities-area">ACTIVITIES</a>
+                      
+                      </li>
+    
+                      <li class="sub-pages">
+    
+                        <a href="#locations-area">TOP LOCATIONS</a>
+    
+                      </li>
+    
+                    </ul>
+    
+                  </li>
+    
+                  <li class="main-pages">
+                    
+                    <a href="#packages-area">PACKAGES</a>
+    
+                    <ul class="modal-map">
+    
+                      <li class="modal-pages">
+                        
+                        <a href="#" data-toggle="modal" data-target="#premium-modal">PREMIUM PACKAGE</a>
+    
+                      </li>
+    
+                      <li class="modal-pages">
+    
+                        <a href="#" data-toggle="modal" data-target="#advanced-modal">ADVANCED PACKAGE</a>
+    
+                      </li>
+    
+                      <li class="modal-pages">
+                        
+                        <a href="#" data-toggle="modal" data-target="#standard-modal">STANDARD PACKAGE</a>
+    
+                      </li>
+    
+                    </ul>
+                  
+                  </li>
+    
+                  <li class="main-pages">
+    
+                    <a href="#register-area">REGISTER</a>
+    
+                  </li>
+    
+                </ul>
+    
+                <hr>
+    
+                <ul class="footer-map">
+    
+                  <li class="footer-pages">
+    
+                    <a href="#contact-area">CONTACT</a>
+    
+                  </li>
+    
+                  <li class="footer-pages">
+    
+                    <a href="#sitemap-area">SITEMAP</a>
+    
+                  </li>
+    
+                </ul>
+    
+              </div><!-- outer row -->
+                            
+            </div><!-- container -->
+    
+          </div><!-- register page -->
+    
+        </article><!-- Sitemap area end ------------------------------------------------------------------------------------------------------------- -->
+    
+      </div>
+
+    </section>
+
+    <footer class="container-fluid">
+
+      <div class="row col-12 align-items-center">
+
+        <div class="col-4"></div>
+
+        <dov class="col-4">
+
+          <div class="row">
+
+            <div class="col-12 ml-auto mr-auto">
+
+                <div class="text-center text-white">&copy 2020 GoWilder, LLC</div>
+
+            </div>
+
+          </div>
+
+        </dov>
+
+        <div class="col-4">
+
+          <nav class="navbar navbar-expand-lg nav-inline bottom-nav">
+
+            <ul class="navbar-nav ml-auto main-menu">
+
+              <li class="nav-item"><a class="nav-link" href="contact.html"><strong>Contact</strong></a></li>
+
+              <li class="nav-item"><a class="nav-link" href="sitemap.html"><strong>Sitemap</strong></a></li>
+
+            </ul>
+
+          </nav><!-- End Navbar Section ---------------------------------------------------------------------------->
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="js/scripts-no.js"></script>
+    <script src="js/nav.js"></script>
+
+  </body>
+
+</html>
